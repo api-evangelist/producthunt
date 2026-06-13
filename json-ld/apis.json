@@ -1,0 +1,149 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "api": "https://pending.schema.org/",
+    "graphql": "https://spec.graphql.org/"
+  },
+  "@type": "WebAPI",
+  "@id": "https://api.producthunt.com/v2/api/graphql",
+  "name": "Product Hunt GraphQL API",
+  "description": "A GraphQL API providing access to Product Hunt's platform data including daily product launches, votes, comments, maker profiles, topics, and collections. Supports OAuth 2.0 authentication with public, private, and write permission scopes.",
+  "url": "https://api.producthunt.com/v2/docs",
+  "provider": {
+    "@type": "Organization",
+    "name": "Product Hunt",
+    "url": "https://www.producthunt.com/",
+    "email": "hello@producthunt.com",
+    "sameAs": [
+      "https://github.com/producthunt"
+    ]
+  },
+  "dateModified": "2026-06-13",
+  "license": "https://www.producthunt.com/legal/terms-of-service",
+  "termsOfService": "https://www.producthunt.com/legal/terms-of-service",
+  "documentation": "https://api.producthunt.com/v2/docs",
+  "apiEndpoint": [
+    {
+      "@type": "EntryPoint",
+      "url": "https://api.producthunt.com/v2/api/graphql",
+      "httpMethod": "POST",
+      "name": "GraphQL Endpoint",
+      "description": "Single GraphQL endpoint for all queries and mutations"
+    }
+  ],
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "name": "GraphQL API",
+    "serviceUrl": "https://api.producthunt.com/v2/api/graphql",
+    "serviceType": "GraphQL"
+  },
+  "potentialAction": [
+    {
+      "@type": "Action",
+      "name": "Query Posts",
+      "description": "Look up Posts by various parameters including featured status, date range, topics, and ordering"
+    },
+    {
+      "@type": "Action",
+      "name": "Query Collections",
+      "description": "Look up Collections including featured collections, by user, or by post"
+    },
+    {
+      "@type": "Action",
+      "name": "Query Topics",
+      "description": "Look up Topics by name, followed by user, or by order"
+    },
+    {
+      "@type": "Action",
+      "name": "Query Users",
+      "description": "Look up Users by ID or username, including their posts, followers, and following"
+    },
+    {
+      "@type": "Action",
+      "name": "Query Goals",
+      "description": "Look up maker Goals by user, group, or project"
+    },
+    {
+      "@type": "Action",
+      "name": "Query MakerGroups",
+      "description": "Look up MakerGroups (Spaces) by members, goals count, or activity"
+    },
+    {
+      "@type": "Action",
+      "name": "Mutate goalCheer",
+      "description": "Cheer a Goal as the authenticated viewer"
+    },
+    {
+      "@type": "Action",
+      "name": "Mutate goalCreate",
+      "description": "Create a Goal for the authenticated viewer"
+    },
+    {
+      "@type": "Action",
+      "name": "Mutate goalMarkAsComplete",
+      "description": "Mark a Goal as complete"
+    },
+    {
+      "@type": "Action",
+      "name": "Mutate goalMarkAsIncomplete",
+      "description": "Mark a Goal as incomplete"
+    },
+    {
+      "@type": "Action",
+      "name": "Mutate goalUpdate",
+      "description": "Update a Goal's due date, title, project, or group"
+    },
+    {
+      "@type": "Action",
+      "name": "Mutate userFollow",
+      "description": "Follow a User as the authenticated viewer"
+    },
+    {
+      "@type": "Action",
+      "name": "Mutate userFollowUndo",
+      "description": "Stop following a User as the authenticated viewer"
+    }
+  ],
+  "keywords": [
+    "Product Discovery",
+    "GraphQL",
+    "Community",
+    "Products",
+    "Startups",
+    "Launches",
+    "Voting",
+    "Tech",
+    "Makers",
+    "Collections",
+    "Topics"
+  ],
+  "sameAs": [
+    "https://github.com/producthunt/producthunt-api",
+    "https://api-v2-docs.producthunt.com/operation/query/"
+  ],
+  "maintainer": {
+    "@type": "Person",
+    "name": "Kin Lane",
+    "email": "kin@apievangelist.com"
+  },
+  "api:authorizationScopes": [
+    {
+      "@type": "api:AuthorizationScope",
+      "name": "public",
+      "description": "Allows access to public information on Product Hunt"
+    },
+    {
+      "@type": "api:AuthorizationScope",
+      "name": "private",
+      "description": "Allows access to Product Hunt on behalf of the authenticated user, e.g., read user goals"
+    },
+    {
+      "@type": "api:AuthorizationScope",
+      "name": "write",
+      "description": "Allows writing data to Product Hunt on behalf of the authenticated user, e.g., manage goals. Requires special approval."
+    }
+  ],
+  "api:graphqlSchema": "https://github.com/producthunt/producthunt-api/blob/master/schema.graphql",
+  "api:graphqlExplorer": "https://ph-graph-api-explorer.herokuapp.com/",
+  "api:oauthDashboard": "https://www.producthunt.com/v2/oauth/applications"
+}

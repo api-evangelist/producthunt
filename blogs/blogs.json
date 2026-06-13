@@ -1,0 +1,20 @@
+{
+  "aid": "producthunt",
+  "name": "Product Hunt",
+  "description": "Blog and content tracking for Product Hunt API provider",
+  "url": "https://www.producthunt.com/",
+  "blogs": [],
+  "lastFetched": "2026-06-13",
+  "sources": [
+    {
+      "type": "GitHub",
+      "url": "https://github.com/producthunt/producthunt-api",
+      "notes": "Primary API documentation repository with README, GraphQL schema, and example code"
+    },
+    {
+      "type": "Documentation",
+      "url": "https://api.producthunt.com/v2/docs",
+      "notes": "Official API documentation covering authentication, scopes, rate limits, and GraphQL reference"
+    }
+  ]
+}
