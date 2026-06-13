@@ -1,0 +1,44 @@
+name: Product Hunt API FinOps
+description: Financial and cost management considerations for integrating with the Product Hunt GraphQL API. The API is currently free for non-commercial use, with commercial licensing available upon request.
+url: https://api.producthunt.com/v2/docs
+
+cost_model:
+  type: free
+  commercial_requires_approval: true
+  description: The Product Hunt API is available at no charge for non-commercial developers. Commercial use requires explicit permission from Product Hunt and may involve licensing fees negotiated directly with the team.
+
+cost_factors:
+  - name: GraphQL Query Complexity
+    description: Complex queries that fetch large datasets consume more complexity points, potentially exhausting rate limits faster and requiring query optimization or backoff strategies.
+    impact: operational
+  - name: OAuth Application Registration
+    description: Free to register via the API dashboard at https://www.producthunt.com/v2/oauth/applications
+    impact: none
+  - name: Commercial Licensing
+    description: Commercial use requires contacting Product Hunt for licensing terms. Costs are negotiated directly.
+    impact: variable
+
+optimization_tips:
+  - Use pagination to fetch only the data needed per request
+  - Cache responses to reduce redundant API calls and complexity point consumption
+  - Use Developer Tokens for simple scripts to avoid complex OAuth flows
+  - Monitor X-RateLimit-Remaining headers to avoid hitting rate limits
+  - Request only necessary GraphQL fields to minimize complexity point usage
+  - Implement exponential backoff when rate limits are encountered
+  - Request higher rate limits from Product Hunt if your use case demands it
+
+budget_guidance:
+  free_tier_suitable_for:
+    - Hobby projects and personal tools
+    - Open-source applications
+    - Research and academic use
+    - Non-commercial product discovery tools
+  requires_commercial_agreement:
+    - SaaS products incorporating Product Hunt data
+    - Commercial analytics dashboards
+    - Revenue-generating applications using Product Hunt content
+    - Applications redistributing Product Hunt data
+
+contact:
+  commercial_inquiries: hello@producthunt.com
+  api_dashboard: https://www.producthunt.com/v2/oauth/applications

@@ -1,0 +1,40 @@
+name: Product Hunt API Rate Limits
+description: Product Hunt enforces rate limits on its GraphQL API and other V2 endpoints to ensure fair use across all developers. Rate limit information is returned in response headers.
+url: https://api.producthunt.com/v2/docs
+
+limits:
+  - endpoint: GraphQL API
+    url: https://api.producthunt.com/v2/api/graphql
+    type: complexity
+    limit: 6250
+    unit: complexity points
+    window: 15 minutes
+    description: Each GraphQL query consumes complexity points based on the depth and breadth of data requested. The total allowed is 6250 complexity points per 15-minute window.
+
+  - endpoint: Other V2 Endpoints
+    url: https://api.producthunt.com/v2/
+    type: request
+    limit: 450
+    unit: requests
+    window: 15 minutes
+    description: Non-GraphQL endpoints such as OAuth token endpoints are limited to 450 requests per 15-minute window.
+
+headers:
+  description: Rate limit status is communicated through HTTP response headers on each API response.
+  fields:
+    - name: X-RateLimit-Limit
+      description: The maximum number of requests/complexity points allowed in the current window
+    - name: X-RateLimit-Remaining
+      description: The number of requests/complexity points remaining in the current window
+    - name: X-RateLimit-Reset
+      description: The time at which the current rate limit window resets (Unix timestamp)
+
+policies:
+  - Product Hunt reserves the right to rate-limit any application that does not follow fair-use guidelines
+  - Faster access or higher limits may be available upon request by contacting hello@producthunt.com
+  - Rate limits apply per OAuth application (client credentials), not per individual user token
+  - Commercial applications should contact Product Hunt for appropriate rate limit arrangements
+
+contact:
+  email: hello@producthunt.com
+  docs: https://api.producthunt.com/v2/docs

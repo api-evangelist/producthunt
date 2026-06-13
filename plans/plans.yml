@@ -1,0 +1,52 @@
+name: Product Hunt API Plans
+description: Product Hunt provides a free GraphQL API for accessing product launches, votes, comments, maker profiles, and collection data. Commercial use requires explicit permission from the Product Hunt team.
+url: https://api.producthunt.com/v2/docs
+
+plans:
+  - name: Developer (Free)
+    description: Free access to the Product Hunt GraphQL API for non-commercial, read-only use. Requires OAuth application registration.
+    price: 0
+    currency: USD
+    billing: none
+    features:
+      - GraphQL API access at https://api.producthunt.com/v2/api/graphql
+      - Public scope (read-only access to public data)
+      - Private scope (user-specific data with user authorization)
+      - Access to posts, products, votes, comments, users, topics, collections
+      - OAuth 2.0 authentication (user tokens and client-only tokens)
+      - Developer Token for simple scripts (non-expiring)
+      - API Explorer via GraphiQL interface
+    limits:
+      graphql_complexity: 6250 points per 15 minutes
+      other_endpoints: 450 requests per 15 minutes
+    notes: Non-commercial use only by default. Commercial use requires contacting hello@producthunt.com.
+
+  - name: Write Access (Approval Required)
+    description: Write-scope permissions allowing data modification on behalf of authenticated users. Requires special approval from Product Hunt.
+    price: null
+    currency: USD
+    billing: contact
+    features:
+      - All Developer plan features
+      - Write scope for posting comments and other write operations
+      - Goal creation and management mutations
+      - User follow/unfollow mutations
+    limits:
+      graphql_complexity: 6250 points per 15 minutes
+      other_endpoints: 450 requests per 15 minutes
+    notes: Contact hello@producthunt.com to request write access approval.
+
+  - name: Commercial (Contact Required)
+    description: Commercial use of the Product Hunt API requires explicit permission from the Product Hunt team.
+    price: null
+    currency: USD
+    billing: contact
+    features:
+      - All Developer plan features
+      - Commercial use rights
+      - Potentially higher rate limits upon request
+    notes: Contact hello@producthunt.com for commercial licensing terms.
+
+contact:
+  email: hello@producthunt.com
+  dashboard: https://www.producthunt.com/v2/oauth/applications
