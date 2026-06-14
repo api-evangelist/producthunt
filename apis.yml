@@ -1,6 +1,10 @@
 aid: producthunt
 name: Product Hunt
-description: Product Hunt is a product discovery platform providing a GraphQL API for accessing product launches, votes, comments, maker profiles, and collection data from the Product Hunt community. Developers can query posts, users, topics, and collections, and with approval, perform write operations such as posting comments and managing goals.
+description: Product Hunt is a product discovery platform providing a GraphQL API
+  for accessing product launches, votes, comments, maker profiles, and collection
+  data from the Product Hunt community. Developers can query posts, users, topics,
+  and collections, and with approval, perform write operations such as posting comments
+  and managing goals.
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/producthunt/refs/heads/main/apis.yml
 created: '2026-06-13'
@@ -8,81 +12,82 @@ modified: '2026-06-13'
 specificationVersion: '0.19'
 type: Index
 tags:
-  - Product Discovery
-  - GraphQL
-  - Community
-  - Products
-  - Startups
-  - Launches
-  - Voting
-  - Tech
-
+- Product Discovery
+- GraphQL
+- Community
+- Products
+- Startups
+- Launches
+- Voting
+- Tech
 apis:
-  - name: Product Hunt GraphQL API
-    description: A GraphQL API providing access to Product Hunt's platform data including daily product launches, votes, comments, maker profiles, topics, and collections. Supports OAuth 2.0 authentication with public, private, and write permission scopes.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://api.producthunt.com/v2/docs
-    baseURL: https://api.producthunt.com/v2/api/graphql
-    tags:
-      - GraphQL
-      - Products
-      - Launches
-      - Votes
-      - Comments
-      - Makers
-      - Collections
-      - Topics
-    properties:
-      - type: Documentation
-        url: https://api.producthunt.com/v2/docs
-      - type: GraphQL
-        url: https://api.producthunt.com/v2/api/graphql
-      - type: GraphQLSchema
-        url: https://github.com/producthunt/producthunt-api/blob/master/schema.graphql
-      - type: Explorer
-        url: https://ph-graph-api-explorer.herokuapp.com/
-      - type: GraphQLReference
-        url: https://api-v2-docs.producthunt.com/operation/query/
-      - type: Authentication
-        url: https://api.producthunt.com/v2/docs#section/Authentication
-      - type: GitHubRepository
-        url: https://github.com/producthunt/producthunt-api
-      - type: Dashboard
-        url: https://www.producthunt.com/v2/oauth/applications
-      - type: RateLimits
-        url: https://raw.githubusercontent.com/api-evangelist/producthunt/refs/heads/main/rate-limits/rate-limits.yml
-      - type: Plans
-        url: https://raw.githubusercontent.com/api-evangelist/producthunt/refs/heads/main/plans/plans.yml
-      - type: FinOps
-        url: https://raw.githubusercontent.com/api-evangelist/producthunt/refs/heads/main/finops/finops.yml
-    contact:
-      - FN: Product Hunt API Support
-        email: hello@producthunt.com
-
-common:
-  - type: Website
-    url: https://www.producthunt.com/
-  - type: Developer
+- name: Product Hunt GraphQL API
+  description: A GraphQL API providing access to Product Hunt's platform data including
+    daily product launches, votes, comments, maker profiles, topics, and collections.
+    Supports OAuth 2.0 authentication with public, private, and write permission scopes.
+  image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+  humanURL: https://api.producthunt.com/v2/docs
+  baseURL: https://api.producthunt.com/v2/api/graphql
+  tags:
+  - GraphQL
+  - Products
+  - Launches
+  - Votes
+  - Comments
+  - Makers
+  - Collections
+  - Topics
+  properties:
+  - type: Documentation
     url: https://api.producthunt.com/v2/docs
-  - type: GitHubOrganization
-    url: https://github.com/producthunt
+  - type: GraphQL
+    url: https://api.producthunt.com/v2/api/graphql
+  - type: GraphQLSchema
+    url: https://github.com/producthunt/producthunt-api/blob/master/schema.graphql
+  - type: Explorer
+    url: https://ph-graph-api-explorer.herokuapp.com/
+  - type: GraphQLReference
+    url: https://api-v2-docs.producthunt.com/operation/query/
+  - type: Authentication
+    url: https://api.producthunt.com/v2/docs#section/Authentication
   - type: GitHubRepository
     url: https://github.com/producthunt/producthunt-api
   - type: Dashboard
     url: https://www.producthunt.com/v2/oauth/applications
-  - type: Support
-    url: https://help.producthunt.com/
-  - type: TermsOfService
-    url: https://www.producthunt.com/legal/terms-of-service
-  - type: PrivacyPolicy
-    url: https://www.producthunt.com/legal/privacy
-  - type: Plans
-    url: https://raw.githubusercontent.com/api-evangelist/producthunt/refs/heads/main/plans/plans.yml
   - type: RateLimits
     url: https://raw.githubusercontent.com/api-evangelist/producthunt/refs/heads/main/rate-limits/rate-limits.yml
+  - type: Plans
+    url: https://raw.githubusercontent.com/api-evangelist/producthunt/refs/heads/main/plans/plans.yml
   - type: FinOps
     url: https://raw.githubusercontent.com/api-evangelist/producthunt/refs/heads/main/finops/finops.yml
-
+  - url: graphql/producthunt-graphql.md
+    type: GraphQL
+  contact:
+  - FN: Product Hunt API Support
+    email: hello@producthunt.com
+common:
+- type: Website
+  url: https://www.producthunt.com/
+- type: Developer
+  url: https://api.producthunt.com/v2/docs
+- type: GitHubOrganization
+  url: https://github.com/producthunt
+- type: GitHubRepository
+  url: https://github.com/producthunt/producthunt-api
+- type: Dashboard
+  url: https://www.producthunt.com/v2/oauth/applications
+- type: Support
+  url: https://help.producthunt.com/
+- type: TermsOfService
+  url: https://www.producthunt.com/legal/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.producthunt.com/legal/privacy
+- type: Plans
+  url: https://raw.githubusercontent.com/api-evangelist/producthunt/refs/heads/main/plans/plans.yml
+- type: RateLimits
+  url: https://raw.githubusercontent.com/api-evangelist/producthunt/refs/heads/main/rate-limits/rate-limits.yml
+- type: FinOps
+  url: https://raw.githubusercontent.com/api-evangelist/producthunt/refs/heads/main/finops/finops.yml
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
