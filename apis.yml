@@ -5,7 +5,7 @@ description: Product Hunt is a product discovery platform providing a GraphQL AP
   data from the Product Hunt community. Developers can query posts, users, topics,
   and collections, and with approval, perform write operations such as posting comments
   and managing goals.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/producthunt/refs/heads/main/apis.yml
 created: '2026-06-13'
 modified: '2026-06-13'
@@ -25,7 +25,7 @@ apis:
   description: A GraphQL API providing access to Product Hunt's platform data including
     daily product launches, votes, comments, maker profiles, topics, and collections.
     Supports OAuth 2.0 authentication with public, private, and write permission scopes.
-  image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://api.producthunt.com/v2/docs
   baseURL: https://api.producthunt.com/v2/api/graphql
   tags:
