@@ -66,6 +66,8 @@ apis:
   - FN: Product Hunt API Support
     email: hello@producthunt.com
 common:
+- type: DomainSecurity
+  url: security/producthunt-domain-security.yml
 - type: Website
   url: https://www.producthunt.com/
 - type: Developer
