@@ -27,6 +27,15 @@ tags:
 - Product Discovery
 - GraphQL
 - Community
+- Product
+- Startups
+- Launches
+- Voting
+- Tech
+tags_raw:
+- Product Discovery
+- GraphQL
+- Community
 - Products
 - Startups
 - Launches
@@ -41,6 +50,15 @@ apis:
   humanURL: https://api.producthunt.com/v2/docs
   baseURL: https://api.producthunt.com/v2/api/graphql
   tags:
+  - GraphQL
+  - Product
+  - Launches
+  - Votes
+  - Comments
+  - Makers
+  - Collection
+  - Topics
+  tags_raw:
   - GraphQL
   - Products
   - Launches
