@@ -5,6 +5,18 @@ description: Product Hunt is a product discovery platform providing a GraphQL AP
   data from the Product Hunt community. Developers can query posts, users, topics,
   and collections, and with approval, perform write operations such as posting comments
   and managing goals.
+deliveryModel:
+  model: unknown
+  open_source: unknown
+  commercial: true
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - pricing
+  - repository-unlicensed
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
@@ -96,6 +108,8 @@ apis:
   - FN: Product Hunt API Support
     email: hello@producthunt.com
 common:
+- type: IssueTracker
+  url: https://github.com/producthunt/producthunt-api/issues
 - type: DomainSecurity
   url: security/producthunt-domain-security.yml
 - type: Website
