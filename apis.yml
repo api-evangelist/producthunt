@@ -35,7 +35,7 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/producthunt.png
 url: https://raw.githubusercontent.com/api-evangelist/producthunt/refs/heads/main/apis.yml
 created: '2026-06-13'
-modified: '2026-06-13'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 type: Index
 tags:
@@ -111,6 +111,10 @@ apis:
   - FN: Product Hunt API Support
     email: hello@producthunt.com
 common:
+- url: https://www.producthunt.com/stories
+  type: Blog
+- url: https://www.producthunt.com/feed
+  type: BlogRSS
 - type: IssueTracker
   url: https://github.com/producthunt/producthunt-api/issues
 - type: DomainSecurity
