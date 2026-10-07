@@ -1,3 +1,7 @@
+# Provenance stamped 2026-10-07 (roadmap#943): written by an API Evangelist sweep (undated — the file carries no date and git cannot supply one), not
+# harvested from the provider. `method: generated` so the economics campaign may replace it with a
+# dated, verbatim transcription; every figure below is unverified until it does.
+method: generated
 name: Product Hunt API Plans
 description: Product Hunt provides a free GraphQL API for accessing product launches, votes, comments, maker profiles, and collection data. Commercial use requires explicit permission from the Product Hunt team.
 url: https://api.producthunt.com/v2/docs
