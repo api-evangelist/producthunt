@@ -54,3 +54,29 @@ plans:
 contact:
   email: hello@producthunt.com
   dashboard: https://www.producthunt.com/v2/oauth/applications
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  - negotiated
+  units: []
+  plans:
+  - name: Developer (Free)
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods: []
+  - name: Write Access (Approval Required)
+    access: other
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Commercial (Contact Required)
+    access: other
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
