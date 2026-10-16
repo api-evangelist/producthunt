@@ -16,5 +16,24 @@
       "url": "https://api.producthunt.com/v2/docs",
       "notes": "Official API documentation covering authentication, scopes, rate limits, and GraphQL reference"
     }
-  ]
+  ],
+  "repo": "producthunt",
+  "feeds": [
+    {
+      "source": "https://www.producthunt.com/stories",
+      "feed_url": "https://www.producthunt.com/feed",
+      "title": "",
+      "saved": 40,
+      "method": "discovered"
+    },
+    {
+      "source": "https://www.producthunt.com/feed",
+      "feed_url": "https://www.producthunt.com/feed",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    }
+  ],
+  "post_count": 40,
+  "fetched": "2026-10-10T13:15:00Z"
 }
