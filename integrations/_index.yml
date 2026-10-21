@@ -54,3 +54,33 @@
     builder: Pipedream repo (component)
   status: not-a-workflow
   arazzo: null
+- slug: producthunt-andreessen-horowitz-a16z
+  label: Andreessen Horowitz (a16z)
+  partner: a16z
+  partner_name: Andreessen Horowitz (a16z)
+  category: vc portfolio participation
+  type: register
+  channel: standard-directory
+  evidence: https://a16z.com/companies/producthunt/
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: a16z portfolio (a16z.com/portfolio/, the page's own data-companies JSON)
+    standard: null
+    spec_file: null
+    role: vc-portfolio-company
+    registered_name: Product Hunt
+    register_id: https://a16z.com/companies/producthunt/
+    register_country: null
+    register_website: https://producthunt.com
+    matched_domain: producthunt.com
+    matched_by: domain
+    signal_note: 'participation only: the venture firm''s own published portfolio lists the company (investment);
+      an ownership and participation record, not conformance or certification'
+    detected_by: sweep-vc-portfolios.py
+    detected: '2026-10-21'
+    year: '2014'
+    status: Exits
+    sector: Consumer
+  status: not-a-workflow
+  arazzo: null
